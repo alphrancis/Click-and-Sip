@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/src/css/product.css" rel="stylesheet">
+    <link rel ="shortcut icon" type="image/png" href="/src/assets/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Click & Sip - Products</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="/index.html" class="logo">
+                <img src="/src/assets/logo.png" alt="logo" style="width: 60px; height: 60px;">
+                Click & Sip
+            </a>
+            
+            <div class="links">
+                <a href="/index.html" class="nav-item">Home</a>
+                <a href="/src/html/product.html" class="nav-item">Products</a>
+                <a href="/src/html/about.html" class="nav-item">About Us</a>
+                <a href="/src/html/feedback.html" class="nav-item">Feedback</a>
+                <a href="/src/html/login.html" class="hamburger-loging">Get Started</a>
+                <a href="/src/html/login.html" class="hamburger-login">Login</a>
+                
+            </div>
+            <div class="login">
+                <a href="/src/html/login.html"><button class="signup">Get Started</button></a>
+                <a href="/src/html/login.html"><button class="login">Login</button></a>
+            </div>
+
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-product">
+            <img src="/src/assets/product-banner.jpeg" alt="Product Banner">
+            <div class="banner-text-product">
+                <h1>Where Every Click Leads to a Perfect Sip</h1>
+                <h3>Discover our wide selection of coffee, tea, and pastries.</h3>
+                <a href="#menu" class="discover">Explore Now</a>
+            </div>
+        </section>
+
+        <nav class="menu-nav">  
+            <div class="menu-nav-content">
+                <span class="menu-title">Menu</span>
+                <input type="text" id="search-bar"class="search-bar" placeholder="Search our drinks and food">
+                <button class="search-button" onclick="smoothScrollTo('#menu')"></button>
+                <button class="search-button-mobile"></button>
+
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="choices-bar">
+                <ul>
+                    <li><a href="#" data-target="hot-coffee" class="menu-link">Hot Coffee</a></li>
+                    <li><a href="#" data-target="cold-coffee" class="menu-link">Cold Coffee</a></li>
+                    <li><a href="#" data-target="non-coffee" class="menu-link">Non Coffee</a></li>
+                    <li><a href="#" data-target="frappe" class="menu-link">Frappe</a></li>
+                    <li><a href="#" data-target="blended-beverage" class="menu-link">Blended Beverage</a></li>
+                    <li><a href="#" data-target="tea" class="menu-link">Tea</a></li>
+                    <li><a href="#" data-target="pasta" class="menu-link">Pasta</a></li>
+                    <li><a href="#" data-target="pastries" class="menu-link">Pastries</a></li>
+                </ul>
+            </div>
+            <aside class="sidebar">
+                <section>
+                    <h3>Drinks</h3>
+                    <ul>
+                        <li><a href="#" data-target="hot-coffee" class="menu-link">Hot Coffee</a></li>
+                        <li><a href="#" data-target="cold-coffee" class="menu-link">Cold Coffee</a></li>
+                        <li><a href="#" data-target="non-coffee" class="menu-link">Non Coffee</a></li>
+                        <li><a href="#" data-target="frappe" class="menu-link">Frappe</a></li>
+                        <li><a href="#" data-target="blended-beverage" class="menu-link">Blended Beverage</a></li>
+                        <li><a href="#" data-target="tea" class="menu-link">Tea</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Food</h3>
+                    <ul>
+                        <li><a href="#" data-target="pasta" class="menu-link">Pasta</a></li>
+                        <li><a href="#" data-target="pastries" class="menu-link">Pastries</a></li>
+                    </ul>
+                </section>
+            </aside>
+            <section id="menu" class="menu-section">
+                <div class="container">
+                    <h2>Our Products</h2>
+                    <article id="hot-coffee" class="menu-category">
+                        <h3>Hot Coffee</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="/src/assets/product/hot/Espresso.jpg" alt="Espresso">
+                                <h4>Espresso</h4>
+                                <p>A rich, flavorful dummy coffee crafted to perfection.</p>
+                                <span class="price">₱120</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/hot/CaffeMisto.jpg" alt="Cafe Misto">
+                                <h4>Cafe Misto</h4>
+                                <p>A creamy, balanced blend brewed with care and precision.</p>
+                                <span class="price">₱150</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/hot/HotBrewedCoffee.jpg" alt="Hot Brewed Coffee">
+                                <h4>Hot Brewed Coffee</h4>
+                                <p>A timeless, aromatic classic made to satisfy every sip.</p>
+                                <span class="price">₱140</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="cold-coffee" class="menu-category">
+                        <h3>Cold Coffee</h3> 
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="/src/assets/product/iced/IcedBlackTeaLatte.jpg" alt="Iced Black Tea Latte">
+                                <h4>Iced Black Tea Latte</h4>
+                                <p>A bold, refreshing latte crafted with rich espresso and 
+                                    smooth, cold milk.</p>
+                                <span class="price">₱180</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/iced/IcedCaffeMocha.jpg" alt="Iced Caffe Mocha">
+                                <h4>Iced Caffe Mocha</h4>
+                                <p>A chilled, indulgent blend of espresso, velvety chocolate, 
+                                    and creamy milk.</p>
+                                <span class="price">₱200</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/iced/IcedCaramelMacchiato.jpg" alt="Iced Caramel Macchiato">
+                                <h4>Iced Caramel Macchiato</h4>
+                                <p>A layered masterpiece with espresso, caramel, and milk over ice.</p>
+                                <span class="price">₱210</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="non-coffee" class="menu-category">
+                        <h3>Non Coffee</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="/src/assets/product/non-coffee/IcedMatchaandEspressoFusion.jpg" alt="Iced Matcha and Espresso Fusion">
+                                <h4>Iced Matcha and Espresso Fusion</h4>
+                                <p>A harmonious blend of earthy matcha and bold espresso, 
+                                    layered with milk and ice for a refreshing twist.</p>
+                                <span class="price">₱220</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/non-coffee/IcedStarbucksReserveCappuccino.jpg" alt="Iced Cappuccino">
+                                <h4>Iced Cappuccino</h4>
+                                <p>A chilled delight featuring rich espresso, frothy cold foam, and a 
+                                    smooth, invigorating finish.</p>
+                                <span class="price">₱190</span>
+                            </div>
+                            
+                        </div>
+                    </article>
+                    <article id="frappe" class="menu-category">
+                        <h3>Frappe</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="/src/assets/product/frappe/ChaiTeaCreamFrappuccino.jpg" alt="Chai Tea Cream Frappuccino">
+                                <h4>Chai Tea Cream Frappuccino</h4>
+                                <p>Spiced chai, milk, and ice topped with whipped cream.</p>
+                                <span class="price">₱200</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/frappe/DarkCaramelCoffeeFrappuccino.jpg" alt="Dark Caramel Coffee Frappuccino">
+                                <h4>Dark Caramel Coffee Frappuccino</h4>
+                                <p>Coffee and dark caramel with whipped cream and caramel drizzle.</p>
+                                <span class="price">₱230</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/frappe/JavaChipFrappuccino.jpg" alt="Java Chip Frappuccino">
+                                <h4>Java Chip Frappuccino</h4>
+                                <p>Coffee, chocolate chips, and ice finished with mocha drizzle.</p>
+                                <span class="price">₱240</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="blended-beverage" class="menu-category">
+                        <h3>Blended Beverage</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="/src/assets/product/blended/IcedShakenBlackTeawithRubyGrapefruitandHoney.jpg" alt="Iced Shaken Black Tea with Ruby Grape fruit and Honey">
+                                <h4>Iced Shaken Black Tea with Ruby Grape fruit and Honey</h4>
+                                <p>Refreshing black tea with ruby grapefruit and a touch of honey, shaken over ice.</p>
+                                <span class="price">₱170</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/blended/IcedShakenHibiscusTeawithPomegranatePearls.jpg" alt="Iced Shaken Hibiscus Tea with Pomegranate Pearls">
+                                <h4>Iced Shaken Hibiscus Tea with Pomegranate Pearls</h4>
+                                <p>Tangy hibiscus tea paired with juicy pomegranate pearls, lightly shaken with ice.</p>
+                                <span class="price">₱170</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/blended/IcedShakenTeas.jpg" alt="Iced Shaken Teas">
+                                <h4>Iced Shaken Teas</h4>
+                                <p>A variety of chilled, shaken teas offering crisp, flavorful refreshment.</p>
+                                <span class="price">₱160</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="tea" class="menu-category">
+                        <h3>Tea</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="/src/assets/product/tea/IcedBlackTeaLatte.jpg" alt="Iced Black Tea Latte">
+                                <h4>Iced Black Tea Latte</h4>
+                                <p>Smooth black tea with milk and ice for a refreshing twist.</p>
+                                <span class="price">₱190</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/tea/IcedChaiTeaLatte.jpg" alt="Iced Chai Tea Latte">
+                                <h4>Iced Chai Tea Latte</h4>
+                                <p>Spiced chai tea blended with milk and served chilled over ice.</p>
+                                <span class="price">₱200</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/tea/IcedGreenTeaLatte.jpg" alt="Iced Green Tea Latte">
+                                <h4>Iced Green Tea Latte</h4>
+                                <p>Creamy green tea combined with milk and ice for a soothing, cool beverage.</p>
+                                <span class="price">₱320</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="pasta" class="menu-category">
+                        <h3>Pasta</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="/src/assets/product/pasta/PennePestowithMushroom.jpg" alt="Penne Pesto with Mushroom">
+                                <h4>Penne Pesto with Mushroom</h4>
+                                <p>Penne pasta in basil pesto with sautéed mushrooms.</p>
+                                <span class="price">₱350</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/pasta/Plant-BasedClassicLasagna.jpg" alt="Plant-Based Classic Lasagna">
+                                <h4>Plant-Based Classic Lasagna</h4>
+                                <p>Layers of pasta, plant-based meat, and tomato sauce.</p>
+                                <span class="price">₱170</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="pastries" class="menu-category">
+                        <h3>Pastries</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <img src="/src/assets/product/pastries/BelgianWaffle.jpg" alt="Belgian Waffle">
+                                <h4>Belgian Waffle</h4>
+                                <p>Golden, crispy waffle with a fluffy interior, perfect for pairing with your 
+                                    favorite toppings.</p>
+                                <span class="price">₱170</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/pastries/BlueberryLiciousCheesecake.jpg" alt="BlueberryLicious Cheesecake">
+                                <h4>BlueberryLicious Cheesecake</h4>
+                                <p>Creamy cheesecake infused with sweet blueberries and a buttery graham cracker crust.</p>
+                                <span class="price">₱220</span>
+                            </div>
+                            <div class="menu-item">
+                                <img src="/src/assets/product/pastries/StickyCinnamonBun.jpg" alt="Sticky Cinnamon Bun">
+                                <h4>Sticky Cinnamon Bun</h4>
+                                <p>Soft, doughy bun swirled with cinnamon and glazed with sticky, sweet icing.</p>
+                                <span class="price">₱180</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Click & Sip. All rights reserved.</p>
+    </footer>
+</body>
+<script src="/script.js"></script>
+<script src="/src/js/components/product.js"></script>
+</html>
